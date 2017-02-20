@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Collapsing Header</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			header, .animalInfoWrap {
+				width: 1140px;
+				margin: 0 auto;
+				padding: 20px;
+				box-sizing: border-box;
+			}	
+
+			.animalInfoWrap {
+				margin-top: 20px;
+			}
+
+			header h1, button {
+				float: left;
+				margin-left: 20px;
+			}
+
+			header h1 {
+				margin: 0;
+			}
+
+			header button {
+				box-shadow: none;
+			    border: none;
+			    background: rgba(206, 204, 53, 0.8);
+			    color: white;
+			    padding: 10px;
+			    height: 30px;
+			    cursor: pointer;
+			    line-height: 12px;
+			    border-radius: 3px;
+			}
+
+			header button:hover {
+				background: rgba(199, 198, 51, 0.8);
+			}
+
+			header button:hover, header button:focus, header button:active, header button:visited {
+				outline: none;
+				outline-style: none;
+				outline-width: 0;
+			}
+
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>JSON and AJAX</h1>
+			<button id="btn">Fetch info for 3 new animals</button>
+		</header>
+
+		<div id="animalInfo" class="animalInfoWrap"></div>
+
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>

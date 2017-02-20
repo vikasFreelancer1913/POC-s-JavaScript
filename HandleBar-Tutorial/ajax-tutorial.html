@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Collapsing Header</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Handlebar Tutorial</h1>
+			<button id="btn">Fetch info for 3 new animals</button>
+		</header>
+
+		<div id="animalInfo" class="animalInfoWrap"></div>
+
+		<script type="text/x-handlebars-template" id="petsTemplate">
+			{{#each pets}}
+				<h2>{{name}}</h2>
+			{{/each}}
+		</script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+	</body>
+</html>

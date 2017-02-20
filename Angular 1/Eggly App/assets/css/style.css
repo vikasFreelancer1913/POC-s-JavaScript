@@ -1,0 +1,48 @@
+/* Side bar css */
+a, a:hover, a:focus, a:visited, a:active, 
+button, button:hover, button:focus, 
+.btn-link, .btn-link:hover, .btn-link:focus,
+.btn, .btn:hover, .btn:focus {
+    outline: none !important;
+    outline-style: none !important;
+    outline-width: 0 !important;
+}
+
+.padding-left-228 {
+    padding-left: 228px;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+}
+
+.logo-wrapper {
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin: 30px auto 10px auto;
+}
+
+.nav-sidebar a {
+    color: #fff;
+}
+
+.nav-sidebar>li>a:focus, .nav>li>a:hover {
+    background: transparent;
+}
+
+.logo-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+/* right content main */
+.main {
+    padding-top: 180px;
+}
+.inner-main h2 {
+    min-height: 33px;
+}
