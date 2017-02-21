@@ -14,7 +14,21 @@
 
 		<script type="text/x-handlebars-template" id="petsTemplate">
 			{{#each pets}}
-				<h2>{{name}}</h2>
+				<div class="petWrap shadow1">
+					<div class="photoWrap"><img src="{{photo}}" alt="{{name}}" /></div>
+					<div class="infoWrap">
+						<h2>{{name}} <span class="subTitle">({{species}})</span></h2>
+						{{#if favFoods}}
+							<h4>Favorite Foods</h4>
+							<ul>
+								{{#each favFoods}}
+									<li>{{{this}}}</li>
+								{{/each}}
+							</ul>
+						{{/if}}
+					</div>
+					<div class="clearFix"></div>
+				</div>
 			{{/each}}
 		</script>
 		<script type="text/javascript" src="js/main.js"></script>
