@@ -85,6 +85,19 @@ header button:hover, header button:focus, header button:active, header button:vi
 	color: #666;
 }
 
+.infoWrap h3 {
+	font-family: "helvetica";
+    font-size: 14px;
+    line-height: 16px;
+    padding: 3px 5px;
+    margin: 0 0 5px 0;
+}
+
+.infoWrap h3 span {
+	color: #666;
+	font-weight: normal;
+}
+
 .infoWrap h4 {
 	margin: 0;
 	background: #bdbdbd;

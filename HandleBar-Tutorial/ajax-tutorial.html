@@ -18,6 +18,7 @@
 					<div class="photoWrap"><img src="{{photo}}" alt="{{name}}" /></div>
 					<div class="infoWrap">
 						<h2>{{name}} <span class="subTitle">({{species}})</span></h2>
+						<h3>Age: <span>{{calculateAge birthYear}}</span></h3>
 						{{#if favFoods}}
 							<h4>Favorite Foods</h4>
 							<ul>
@@ -31,7 +32,7 @@
 				</div>
 			{{/each}}
 		</script>
-		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

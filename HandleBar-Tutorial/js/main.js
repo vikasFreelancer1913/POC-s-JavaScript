@@ -17,6 +17,14 @@ ourRequest.onerror = function() {
 
 ourRequest.send();
 
+Handlebars.registerHelper('calculateAge', function(birthYear) {
+	var age = new Date().getFullYear() - birthYear;
+	if (age > 0) {
+		return age + ' years old';
+	}else {
+		return 'Less than a year old';
+	}
+});
 
 function createHTML(petsData) {
 	var rawTemplate = document.getElementById('petsTemplate').innerHTML;
